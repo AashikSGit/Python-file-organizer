@@ -1,0 +1,22 @@
+Initial sketch.
+get the directory to be organized from the user - Done
+    |
+get each content one by one.(rglob) - Done
+    |
+    check if it's a file - Done
+    |
+    if yes
+    |
+    get the extention of the file (.suffix.lower()) - Done
+    |
+    determine the file category to be enlisted by mapping. (dictionary) - Done
+        |
+        if file group, - Done
+            |
+            exists
+                |
+                include the file into targeted directory
+            |
+            not exists
+                |
+                include into others
