@@ -1,22 +1,13 @@
-Initial sketch.
-get the directory to be organized from the user - Done
+New bugs
     |
-get each content one by one.(rglob) - Done
-    |
-    check if it's a file - Done
-    |
-    if yes
-    |
-    get the extention of the file (.suffix.lower()) - Done
-    |
-    determine the file category to be enlisted by mapping. (dictionary) - Done
-        |
-        if file group, - Done
-            |
-            exists
-                |
-                include the file into targeted directory
-            |
-            not exists
-                |
-                include into others
+- In the current implementation, A file would be considered 
+duplicate if it was found in only one out of all nested directories. (Done)
+what if:
+target directory/
+    report.pdf
+    Invoices/report.pdf
+    Archives/report.pdf
+
+- The output directory remains as a relative path so that it ends up 
+under project folder, And It should be seperated in order to avoid
+unexpected results. (Done)
